@@ -1,30 +1,69 @@
-<html lang="en">
+<!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>HIIII</title>
+    <title>My Closet</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <div class="container-1">
-        <h2> Challenge 1: Your Age in Days</h2>
-        <div class="flex-box-container-1">
-            <div>
-                <button class="btn btn-primary" onclick="ageinDays()">Click me</button>
-            </div>
-            
-            <div>
-                <button class="btn btn-danger" onclick="reset()">reset</button>
-            </div>
-        </div>  
-        
-        <div class="flex-box-container-1">
-            <div id="flex-box-result"></div>
-        </div>
 
+<body>
+    <h1>My Closet</h1>
+    <div class="grid-container">
+        
+        <div>
+            <button class="buttonsleft"  onclick="show_image('left', topsimages, topimage)">&lt;</button>
+        </div>
+        <div>
+            <img id="slider1">
+        </div>
+        <div>
+            <button class="buttonsright" onclick="show_image('right', topsimages, topimage)">&gt;</button>
+        </div>
+        
+        <div>
+            <button class="buttonsleft"  onclick="show_image('left', jacketsimages, jacketimage)">&lt;</button>
+        </div>
+        <div>
+            <img id="slider2">
+        </div>
+        <div>
+            <button class="buttonsright" onclick="show_image('right', jacketsimages, jacketimage)">&gt;</button>
+        </div>
+            
+        <div>
+            <button class="buttonsleft"  onclick="show_image('left', bottomsimages, bottomimage)">&lt;</button>
+        </div>
+        <div>
+            <img id="slider3">
+        </div>
+        <div>        
+            <button class="buttonsright" onclick="show_image('right', bottomsimages, bottomimage)">&gt;</button>
+        </div>
+        <div>
+            <button class="buttonsleft"  onclick="show_image('left', shoesimages, shoesimage)">&lt;</button>
+        </div>
+        <div>
+            <img id="slider4">
+        </div>
+        <div>
+            <button class="buttonsright" onclick="show_image('right', shoesimages, shoesimage)">&gt;</button>
+        </div>
+        <div id="selection">
+            Sleevelength of top:
+            <select id="sleevelength" onchange="">
+                <option value="all">all</option>
+                <option value="long">long</option>
+                <option value="short">short</option>
+                <option value="no sleeves">no sleeves</option>
+            </select>
+            <br>Type of bottoms:
+            <select id="length" onchange="">
+                <option value="all">all</option>
+                <option value="long">long</option>
+                <option value="short">short</option>
+                <option value="skirt">skirt</option>
+            </select>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
-</html>
+
+
