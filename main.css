@@ -1,0 +1,50 @@
+body{
+    margin: 30px;
+    background-color: rgb(155, 170, 220);
+    font-family: arial;;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.grid-container{
+    max-width: 600px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 250px 250px 250px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.grid-container > div {
+    text-align: center;
+}
+
+.grid-container > div:nth-child(13){
+    grid-column: 2/ span 4;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+
+img{
+    width: 175px;
+    margin: 0px auto;
+}
+
+.buttonsright{
+    margin-top: 100px;
+}
+
+.buttonsleft{
+    margin-top: 100px;
+}
+
+#selection{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    line-height: 2;
+    background: none;
+}
