@@ -14,7 +14,7 @@ h1{
     margin: 0px auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 325px 325px 325px;
+    grid-template-rows: 400px 400px 400px;
     justify-items: stretch;
     align-items: stretch;
 }
@@ -30,16 +30,18 @@ h1{
 }
 
 img{
-    width: 250px;
+    width: 300px;
     margin: 0px auto;
 }
 
 .buttonsright{
     margin-top: 150px;
+    height: 100px;
 }
 
 .buttonsleft{
     margin-top: 150px;
+    height: 100px;
 }
 
 #selection{
