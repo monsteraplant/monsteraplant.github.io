@@ -90,29 +90,22 @@ const clothes = [
 ]
 
 //filter array depending on type of clothes
-var tops = clothes.filter(clothes => clothes.type === "tops");
-let bottoms = clothes.filter(clothes => clothes.type === "bottoms");
-let jackets = clothes.filter(clothes => clothes.type === "jackets");
-let shoes = clothes.filter(clothes => clothes.type === "shoes");
+var topsall = clothes.filter(clothes => clothes.type === "tops");
+var bottomsall = clothes.filter(clothes => clothes.type === "bottoms");
+var jackets = clothes.filter(clothes => clothes.type === "jackets");
+var shoes = clothes.filter(clothes => clothes.type === "shoes");
+
 
 
 //filter array depending on user input
-const selecttop = document.getElementById("sleevelength");
-
-if (selecttop.value === "long") {
-  var tops= tops.filter(tops => tops.sleevelength === "long");
-} if (selecttop.value === "short") {
-  var tops = tops.filter(tops => tops.sleevelength === "short");
-} if (selecttop.value === "no sleeves") {
-  var tops = tops.filter(tops => tops.sleevelength === "no sleeves");
-};
-
+var tops = topsall
+var bottoms = bottomsall
 
 //assign images to path
-let topsimages = tops.map(a => a.path);
-let bottomsimages = bottoms.map(a => a.path);
-let jacketsimages = jackets.map(a => a.path);
-let shoesimages = shoes.map(a => a.path);
+var topsimages = tops.map(a => a.path);
+var bottomsimages = bottoms.map(a => a.path);
+var jacketsimages = jackets.map(a => a.path);
+var shoesimages = shoes.map(a => a.path);
 
 //slideshows for every type of clothes
 var index = 0;
@@ -126,6 +119,8 @@ topimage.src = topsimages[0];
 jacketimage.src = jacketsimages[0];
 bottomimage.src = bottomsimages[0];
 shoesimage.src = shoesimages[0];
+
+
 
 function show_image(direction, images, image)
 {
@@ -146,6 +141,88 @@ function show_image(direction, images, image)
   
   image.src = images[index];
 }
+
+function show_tops(direction, topsimages, topimage)
+{
+  const selecttop = document.getElementById("sleevelength");
+  if (selecttop.value === "all") {
+    var tops = topsall;
+  } if (selecttop.value === "long") {
+    var tops = topsall.filter(topsall => topsall.length === "long");
+  } if (selecttop.value === "short") {
+    var tops = topsall.filter(topsall => topsall.length === "short");
+  } if (selecttop.value === "no sleeves") {
+    var tops = topsall.filter(topsall => topsall.length === "no sleeves");
+  };
+  var topsimages = tops.map(a => a.path);
+  var topimage = document.getElementById("slider1");
+  topimage.src = topsimages[0];
+
+  show_image(direction, topsimages, topimage);
+}
+
+function show_bottoms(direction, bottomsimages, bottomimage)
+{
+  const selectbottom = document.getElementById("length");
+  if (selectbottom.value === "all"){
+    var bottoms = bottomsall;
+  } if (selectbottom.value === "long") {
+    var bottoms = bottomsall.filter(bottomsall => bottomsall.length === "long");
+  } if (selectbottom.value === "short") {
+    var bottoms = bottomsall.filter(bottomsall => bottomsall.length === "short");
+  } if (selectbottom.value === "skirt") {
+    var bottoms = bottomsall.filter(bottomsall => bottomsall.length === "skirt");
+  };
+
+  var bottomsimages = bottoms.map(a => a.path);
+  var bottomimage = document.getElementById("slider3");
+  bottomimage.src = bottomsimages[0];
+
+  show_image(direction, bottomsimages, bottomimage);
+}
+
+function reruntops()
+{
+  const selecttop = document.getElementById("sleevelength");
+  if (selecttop.value === "all") {
+    var tops = topsall;
+  } if (selecttop.value === "long") {
+    var tops = topsall.filter(topsall => topsall.length === "long");
+  } if (selecttop.value === "short") {
+    var tops = topsall.filter(topsall => topsall.length === "short");
+  } if (selecttop.value === "no sleeves") {
+    var tops = topsall.filter(topsall => topsall.length === "no sleeves");
+  };
+  var topsimages = tops.map(a => a.path);
+  var topimage = document.getElementById("slider1");
+  topimage.src = topsimages[0];
+
+  show_image(direction, topsimages, topimage)
+
+}
+
+
+function rerunbottoms()
+{
+  const selectbottom = document.getElementById("length");
+  if (selectbottom.value === "all"){
+    var bottoms = bottomsall;
+  } if (selectbottom.value === "long") {
+    var bottoms = bottomsall.filter(bottomsall => bottomsall.length === "long");
+  } if (selectbottom.value === "short") {
+    var bottoms = bottomsall.filter(bottomsall => bottomsall.length === "short");
+  } if (selectbottom.value === "skirt") {
+    var bottoms = bottomsall.filter(bottomsall => bottomsall.length === "skirt");
+  };
+
+  var bottomsimages = bottoms.map(a => a.path);
+  var bottomimage = document.getElementById("slider3");
+  bottomimage.src = bottomsimages[0];
+
+  show_image(direction, bottomsimages, bottomimage);
+}
+
+
 
 /* website to do list
 -transfer excel to json/ or to string then into array of objects -> use in website
