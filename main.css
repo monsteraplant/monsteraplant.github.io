@@ -1,12 +1,12 @@
 body{
     margin: 30px;
-    background-color: rgb(155, 170, 220);
     font-family: arial;;
 }
 
 h1{
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
 }
 
 .grid-container{
@@ -14,7 +14,7 @@ h1{
     margin: 0px auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 325px 325px 325px;
     justify-items: stretch;
     align-items: stretch;
 }
@@ -30,20 +30,20 @@ h1{
 }
 
 img{
-    width: 200px;
+    width: 250px;
     margin: 0px auto;
 }
 
 .buttonsright{
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .buttonsleft{
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 #selection{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: left;
     line-height: 2;
     background: none;
