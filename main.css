@@ -1,60 +1,74 @@
 body{
-    margin: 30px;
-    font-family: arial;;
-    font-size: larger;
+    font-family: 'arial';
 }
 
 h1{
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-family: 'Times New Roman';
+    
 }
 
-.grid-container{
-    max-width: 900px;
-    margin: 0px auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 500px 500px 500px;
-    justify-items: stretch;
-    align-items: stretch;
+ul {
+    justify-content: center;
+    display:flex
 }
 
-.grid-container > div {
-    text-align: center;
+ul li{
+    background-color: rgba(120, 29, 211, 0.43);
+    color: white;
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 30px;
 }
 
-.grid-container > div:nth-child(13){
-    grid-column: 2/ span 4;
-    background-color: rgb(255, 255, 255);
-    margin-top: 30px;
+ul li a{
+    color: white;
+
+}
+
+section{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#slideshow1{
+    width:200px;
+    position:relative;
+}
+#slideshow2{
+    width:200px;
+    position:relative;
+}
+#slideshow3{
+    width:200px;
+    position:relative;
+}
+#slideshow4{
+    width:200px;
+    position:relative;
 }
 
 img{
-    width: 300px;
-    margin: 0px auto;
-}
-
-.buttonsright{
-    margin-top: 150px;
-    height: 100px;
-    font-size: 20px;
+    width:100%;
 }
 
 .buttonsleft{
-    margin-top: 150px;
-    height: 100px;
-    font-size: 20px;
+    position:absolute;
+    top:125px;    
+    left:10px;
 }
 
-#selection{
-    color: rgb(0, 0, 0);
+.buttonsright{
+    position: absolute;
+    top:125px;
+    right:10px;
+}
+
+
+
+#options{
+    padding: 10px;
     text-align: left;
-    line-height: 2;
-    background: none;
-    font-size: larger;
-}
-
-#selection > select{
-    font-size: 20px;
 }
