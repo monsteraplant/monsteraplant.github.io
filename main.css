@@ -1,5 +1,6 @@
 body{
     font-family: 'arial';
+    font-size: larger;
 }
 
 h1{
@@ -34,19 +35,19 @@ section{
 }
 
 #slideshow1{
-    width:200px;
+    width:400px;
     position:relative;
 }
 #slideshow2{
-    width:200px;
+    width:400px;
     position:relative;
 }
 #slideshow3{
-    width:200px;
+    width:400px;
     position:relative;
 }
 #slideshow4{
-    width:200px;
+    width:400px;
     position:relative;
 }
 
