@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <title>My Closet</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>My Closet</h1>
+
+    <ul>
+        <li><a href="index.html">two piece</a></li>
+        <li>one piece</li>
+    </ul>
+    
+    <section>
+        
+        <div id="section1">
+        
+            <div id="slideshow1">
+                <div>
+                    <img id="slider1">
+                </div>
+                
+                <button class="buttonsleft"  onclick="show_image('left', onepieceimages, onepieceimage)">&lt;</button>
+                <button class="buttonsright" onclick="show_image('right', onepieceimages, onepieceimage)">&gt;</button>
+            </div>
+    
+
+    
+            <div id="slideshow3">
+                <div>
+                    <img id="slider3">
+                </div>
+        
+
+                    <button class="buttonsleft"  onclick="show_image('left', shoesimages, shoesimage)">&lt;</button>
+                    <button class="buttonsright" onclick="show_image('right', shoesimages, shoesimage)">&gt;</button>
+
+            </div>
+    
+        </div>
+        
+        <div id="section2">      
+            <div id="slideshow4">
+                <div>
+                    <img id="slider2">
+                </div>
+
+                    <button class="buttonsleft"  onclick="show_image('left', jacketsimages, jacketimage)">&lt;</button>
+                    <button class="buttonsright" onclick="show_image('right', jacketsimages, jacketimage)">&gt;</button>
+
+            </div>
+
+            <div id="options">
+                Jacket Options:
+                <select id="jacketoptions">
+                    <option value="all">all</option>
+                    <option value="none">none</option>
+                </select>
+            </div>
+        </div>
+    
+        
+    </section>
+    
+
+
+    <script src="page2.js"></script>
+</body>
