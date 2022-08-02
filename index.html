@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <title>My Closet</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>My Closet</h1>
+
+    <div id="options">
+        
+        One piece or two piece:
+        <select id="pieceoption" onchange="showpieces()">
+            <option value="twopiece">Two Piece</option>
+            <option value="onepiece">One Piece</option>
+        </select> 
+        Layering Options:
+        <select id="layeringoption" onchange="showlayers()">
+            <option value="none">None</option>
+            <option value="all">All</option>
+            <option value="layering">Layering Piece</option>
+            <option value="jacket">Jacket</option>
+            
+        </select>
+        
+
+        <div id="partone">
+            Top Options:
+        <select id="toplength" onchange="show_tops()">
+            <option value="all">All</option>
+            <option value="long">Long</option>
+            <option value="short">Short</option>
+            <option value="no sleeves">No Sleeves</option>
+        </select>
+        Bottoms Options:
+        <select id="bottomlength" onchange="show_bottoms()">
+            <option value="all">All</option>
+            <option value="long">Long</option>
+            <option value="short">Short</option>
+            <option value="skirt">Skirt</option>
+        </select>
+    </div>
+    </div>
+    
+    <section>
+        
+        <div id="section1">
+
+            <div id="slideshow6">
+                <div>
+                    <img id="slider6">
+                </div>
+                
+                <button class="buttonsleft"  onclick="show_image('left', onepieceimages, onepieceimage)">&lt;</button>
+                <button class="buttonsright" onclick="show_image('right', onepieceimages, onepieceimage)">&gt;</button>
+            </div>
+        
+            <div id="slideshow1">
+                <div>
+                    <img id="slider1">
+                </div>
+                <button class="buttonsleft"  onclick="show_tops('left', topsimages, topimage)">&lt;</button>
+                <button class="buttonsright" onclick="show_tops('right', topsimages, topimage)">&gt;</button>
+            </div>
+    
+           
+            <div id="slideshow2">
+                <div>
+                    <img id="slider3">
+                </div>
+                <div>        
+                    <button class="buttonsleft"  onclick="show_bottoms('left', bottomsimages, bottomimage)">&lt;</button>
+                    <button class="buttonsright" onclick="show_bottoms('right', bottomsimages, bottomimage)">&gt;</button>
+                </div>
+            </div>
+    
+            <div id="slideshow3">
+                <div>
+                    <img id="slider4">
+                </div>
+        
+                <div>
+                    <button id="buttonsleftshoes"  onclick="show_image('left', shoesimages, shoesimage)">&lt;</button>
+                    <button id="buttonsrightshoes" onclick="show_image('right', shoesimages, shoesimage)">&gt;</button>
+                </div>
+            </div>
+    
+        </div>
+        
+        <div id="section2">
+            <div id="slideshow4">
+                <div>
+                    <img id="slider5">
+                </div>
+                <div>
+                    <button class="buttonsleft"  onclick="show_image('left', layeredtopsimages, layeredtopimage)">&lt;</button>
+                    <button class="buttonsright" onclick="show_image('right', layeredtopsimages, layeredtopimage)">&gt;</button>
+                </div>
+            </div>
+
+            <div id="slideshow5">
+                <div>
+                    <img id="slider2">
+                </div>
+                <div>
+                    <button class="buttonsleft"  onclick="show_image('left', jacketsimages, jacketimage)">&lt;</button>
+                    <button class="buttonsright" onclick="show_image('right', jacketsimages, jacketimage)">&gt;</button>
+                </div>
+            </div>
+
+            
+        </div>
+    
+        
+    </section>
+    
+
+
+    <script src="main.js"></script>
+</body>
+
+

@@ -1,0 +1,79 @@
+body{
+    font-family: 'arial';
+    font-size:x-large;
+
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman';
+}
+
+
+section{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#section2{
+    margin-left: 10px;
+}
+
+#slideshow1, #slideshow2, #slideshow3, #slideshow4, #slideshow5, #slideshow6{
+    width:400px;
+    position:relative;
+}
+
+img{
+    width:100%;
+}
+
+.buttonsleft{
+    position:absolute;
+    top:250px;    
+    left:10px;
+    height: 50px;
+}
+
+.buttonsright{
+    position: absolute;
+    top:250px;
+    right:10px;
+    height: 50px;
+}
+
+#buttonsleftshoes{
+    position: absolute;
+    top:150px;
+    left:10px;
+    height: 50px;
+}
+
+#buttonsrightshoes{
+    position: absolute;
+    top:150px;
+    right:10px;
+    height: 50px;
+}
+
+
+#options{
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+
+select{
+    font-size:20px;
+}
+
+#slideshow6{
+    display: none;
+}
+
+#slideshow4, #slideshow5{
+    display: none;
+}
