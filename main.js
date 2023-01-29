@@ -66,7 +66,7 @@ var allclothes = [
     {path: "images/blacksweatervest.jpg", type: "tops", length: "no sleeves", season: "norm"},
     {path: "images/blackcroptshirt.jpg", type: "tops", length: "short", season: "norm"},
     {path: "images/whitemilkmaidtop.jpg", type: "tops", length: "short", season: "summer"},
-    {path: "images/brownblouse.jpg", type: "tops", length: "long", season: "norm"},
+    {path: "images/brownblouse.jpg", type: "tops", length: "short", season: "norm"},
     {path: "images/stripedtshirt.jpg", type: "tops", length: "short", season: "norm"},
     {path: "images/blacknotchtshirt.jpg", type: "tops", length: "short", season: "norm"},
     {path: "images/blackbuttontshirt.jpg", type: "tops", length: "short", season: "norm"},
