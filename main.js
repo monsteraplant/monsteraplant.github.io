@@ -112,6 +112,8 @@ var allclothes = [
     {path: "images/blacksneakers(2).jpg", type: "shoes", length: "", season: "norm"},
     {path: "images/vans(2).jpg", type: "shoes", length: "", season: "norm"},
     {path: "images/blackminiskirt.jpg", type: "bottoms", length: "skirt", season: "norm"},
+    {path: "images/greensweater.jpg", type: "tops", length: "long", season: "winter"},
+    {path: "images/redcoat.jpg", type: "jackets", length: "", season: "winter"}
 ]
 
 //filter array depending on type of clothes
