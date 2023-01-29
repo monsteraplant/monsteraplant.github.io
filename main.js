@@ -5,7 +5,6 @@ var allclothes = [
     {path: "images/whiteshirt.jpg", type: "tops", length: "long", season: "norm"},
     {path: "images/whiteshirt.jpg", type: "layeredtops", length: "", season: "norm"},
     {path: "images/blackjeans.jpg", type: "bottoms", length: "long", season: "norm"},
-    {path: "images/bluejeans.jpg", type: "bottoms", length: "long", season: "norm"},
     {path: "images/blackjeanjacket.jpg", type: "jackets", length: "", season: "norm"},
     {path: "images/leatherblazer(2).jpg", type: "jackets", length: "", season: "norm"},
     {path: "images/converse.jpg", type: "shoes", length: "", season: "norm"},
